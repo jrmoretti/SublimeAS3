@@ -5,7 +5,7 @@ Installation
 --------
 
 `cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/`  
-`git clone git://github.com/jrmoretti/SublimeAS3.git ActionScript3`
+`git clone --recursive git://github.com/jrmoretti/SublimeAS3.git ActionScript3`
 
 You'll need to remove the old AS Package, to do so, execute:  
 `rm -rf ActionScript`
