@@ -12,7 +12,8 @@ class Actionscript3Complete(sublime_plugin.EventListener):
 	def on_query_completions(self, view, prefix, locations):
 		
 		AS3suggestions = []
-
+		if not view.settings().get('syntax').startswith("Packages/ActionScript3"):
+			return AS3suggestions
 		# Project reference
 		st = source_tools.SourceTools(view.file_name(), os.path.join(sublime.packages_path(), 'ActionScript3'))
 				
